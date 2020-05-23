@@ -3,6 +3,8 @@ project(oop8)
 
 set(CMAKE_CXX_STANDARD 17)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+
 add_executable(lab8 main.cpp
         Point.cpp Point.h
         Figure.h
@@ -14,3 +16,4 @@ add_executable(lab8 main.cpp
             FileProcessor.cpp FileProcessor.h
         CoutProcessor.cpp CoutProcessor.h
         Publisher.cpp Publisher.h)
+
